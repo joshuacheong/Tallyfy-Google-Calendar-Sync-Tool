@@ -24,8 +24,10 @@ The **Tallyfy-Google Calendar Sync Tool** was designed in mind to leverage Tally
  2. Open Tallyfy.py and insert your Tallyfy email, Tallyfy password, and organization ID into lines 7-9
 
 > authDict["password"] = "YOUR TALLYFY PASSWORD"
-authDict["email"] = "YOUR TALLYFY EMAIL"
-orgID = "YOUR ORGANIZATION ID"
+
+> authDict["email"] = "YOUR TALLYFY EMAIL"
+
+> orgID = "YOUR ORGANIZATION ID"
 
  3. Follow step 1 and 2 of the [Python Quickstart Setup for Google API](https://developers.google.com/calendar/quickstart/python) and copy the client_secret.json file into the same folder for the **Tallyfy-Google Calendar Sync Tool**
  4. You should be ready to run Start.py on the console by moving to the active folder and execute the command `>> python Start.py`
