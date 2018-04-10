@@ -42,16 +42,8 @@ The **Tallyfy-Google Calendar Sync Tool** was designed with efficiency in mind. 
 
 The following demonstrates the API calls that occur:
 
-```mermaid
-sequenceDiagram
-Start.py ->> Tallyfy.py: extractTasks()
-Tallyfy.py ->> Tallyfy API: Call outstanding tasks
-Tallyfy API -->> Tallyfy.py: Return tasks
-Tallyfy.py ->> Start.py: Return tasks
-Start.py ->> Google Calendar API: Call Tallyfy Calendar ID/Call task events
-Google Calendar API -->> Start.py: Return Tallyfy Calendar/Return task events
-Start.py ->> Google Calendar API: Deconflict tasks with events and create/update events
-```
+![alt text](https://github.com/joshuacheong/Tallyfy-Google-Calendar-Sync-Tool/blob/master/images/SequenceDiagram.png "API Calls Sequence Diagram")
+
 
 ## License
 
